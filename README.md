@@ -9,4 +9,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 Demo 
-https://festive-heisenberg-273ec5.netlify.app
+https://toto-app-react.netlify.app/
