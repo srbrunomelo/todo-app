@@ -13,7 +13,7 @@ function reducer(state, action) {
        
         case todoTypes.TOGGLE_TODO_STATUS:
             return state.map((todo) => {
-                if (todo.id == action.payload.id) {
+                if (todo.id === action.payload.id) {
                     return {
                         ...todo, completed: action.payload.completed
                     }
@@ -24,7 +24,7 @@ function reducer(state, action) {
             
         case todoTypes.TOGGLE_TODO_TITLE:
             return state.map((todo) => {
-                if (todo.id == action.payload.id) {
+                if (todo.id === action.payload.id) {
                     return {
                         ...todo, title: action.payload.title
                     }
@@ -35,7 +35,7 @@ function reducer(state, action) {
             
         case todoTypes.REMOVE_TODO:
             return state.filter((todo) => { 
-                return todo.id != action.payload.id 
+                return todo.id !== action.payload.id 
             })    
         
         default:

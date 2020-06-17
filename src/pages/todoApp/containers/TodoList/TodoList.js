@@ -58,13 +58,10 @@ function TodoList() {
     },[]) 
 
     const getTitle = useCallback(
-        (id) => {
-            let curTitle = '';
-
+        (id) => {  
             const curTodo = todos.find((todo) => {
                 return todo.id === id
-            });
-
+            }); 
             return curTodo.title
         },
         [todos],
